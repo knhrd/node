@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body class="container" onloa="init();">
+    <header>
+        <h1 class="display-4"><%=title %></h1>
+    </header>
+    <div role="main">
+        <p><%=content %></p>
+        <table class="table">
+            <tr>
+                <td><%=data.msg %></td>
+            </tr>
+        </table>
+        <p><%= cookie_data %></p>
+        <form action="/other" method="post" name="contact-form">
+            <div>
+                <label>Content</label>
+                <textarea type="text" name="msg" class="form-control"　placeholder="メッセージを入力"></textarea>                
+            </div>
+                <input type="submit" value="　送信　" class="btn btn-primary"></input>
+        </form>
+    </div>
+</body>
+
+</html>
